@@ -1,30 +1,30 @@
 # Corporate Credit Rating Prediction System
 
-## Descrizione del Progetto
+## Project Description
 
-Questo progetto mira a prevedere il **Corporate Credit Rating**, che rappresenta l'opinione di un'agenzia indipendente sulla capacità di un'azienda di adempiere ai propri obblighi finanziari. Utilizzando tecniche di **apprendimento supervisionato** e **ragionamento probabilistico**, il sistema automatizza la valutazione del rischio aziendale, classificando le società in base alla loro solidità finanziaria.
+This project aims to predict the **Corporate Credit Rating**, which represents an independent agency's opinion on a company's ability to meet its financial obligations. Using **supervised learning** and **probabilistic reasoning** techniques, the system automates corporate risk assessment, classifying companies based on their financial soundness.
 
-Il progetto utilizza modelli di **Machine Learning** come Decision Tree, RandomForest, XGBoost e LightGBM per predire il rating, e include una **rete bayesiana** per fare inferenze probabilistiche sui dati.
+The project uses **Machine Learning** models such as Decision Tree, RandomForest, XGBoost, and LightGBM to predict the rating, and includes a **Bayesian network** to make probabilistic inferences on the data.
 
-## Struttura del Progetto
+## Project Structure
 
-1. **Preprocessing dei dati**
-   - Pulizia e preparazione del dataset con tecniche come normalizzazione e one-hot encoding.
-   - Riduzione delle classi di rating da 22 a 4 principali categorie rappresentanti rischio minimo-basso, medio, medio-alto, alto-default.
+1.  **Data Preprocessing**
+    -   Cleaning and preparing the dataset using techniques like normalization and one-hot encoding.
+    -   Reducing the rating classes from 22 to 4 main categories representing minimum-low, medium, medium-high, and high-default risk.
 
-2. **Apprendimento Supervisionato**
-   - Utilizzo di modelli come Decision Tree, RandomForest, XGBoost e LightGBM.
-   - Test di varie tecniche di riequilibrio delle classi, come SMOTE e ADASYN.
+2.  **Supervised Learning**
+    -   Use of models such as Decision Tree, RandomForest, XGBoost, and LightGBM.
+    -   Testing various class rebalancing techniques, such as SMOTE and ADASYN.
 
-3. **Rete Bayesiana**
-   - Creazione di una rete bayesiana per gestire casi di dati mancanti e generare nuove previsioni basate su evidenze probabilistiche.
+3.  **Bayesian Network**
+    -   Creation of a Bayesian network to handle cases of missing data and generate new predictions based on probabilistic evidence.
 
-## Risultati
+## Results
 
-I risultati mostrano che l'approccio basato su **SMOTE** ha prodotto le migliori prestazioni complessive, in particolare con i modelli **RandomForest** e **XGBoost**. Le metriche utilizzate per la valutazione includono Balanced Accuracy, Cohen's Kappa e Geometric Mean.
+The results show that the **SMOTE**-based approach yielded the best overall performance, particularly with the **RandomForest** and **XGBoost** models. The metrics used for evaluation include Balanced Accuracy, Cohen's Kappa, and Geometric Mean.
 
-## Sviluppi Futuri
+## Future Developments
 
-- Aumentare il numero di dati per migliorare l'accuratezza delle previsioni.
-- Approfondire l'utilizzo di reti neurali per la classificazione.
-- Integrare altre variabili per un'analisi più completa e accurata.
+-   Increase the amount of data to improve prediction accuracy.
+-   Further explore the use of neural networks for classification.
+-   Integrate additional variables for a more comprehensive and accurate analysis.
